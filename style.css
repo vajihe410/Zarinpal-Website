@@ -45,6 +45,7 @@ header{
     background-color: rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(20px);
     transition: all 0.3 ease;
+    z-index: 100;
 }
 .logo{
     margin: 11px 28px;
@@ -202,6 +203,80 @@ header{
 .show-hamburger-menu {
     animation: fadeInDown 0.25s forwards;
  }
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1050px;
+    padding: 124px 60px 80px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg,#21254e,#254a83);
+    position: relative;
+ }
+.banner h3{
+    color: #fff;
+    font-size: 2rem;
+    font-family: "YekanBakhHeavy";
+}
+.banner p{
+    color: #fff;
+    font-size: 1.15rem;
+    line-height: 2.5rem;
+    margin: 25px 0;
+}
+.banner-button{
+    display: flex;
+    margin-top: 60px;
+}
+.register{
+    font-size: 1rem;
+    font-family:"YekanBakhBold"; 
+    background-color: #ffd900;
+    padding: 6px 14px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+}
+.login{
+    font-size: 1rem;
+    font-family:"YekanBakhBold"; 
+    background-color: #435a8a;
+    padding: 6px 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+.banner-image{
+    background: url(./image/wave.svg) no-repeat 50%;
+}
+.banner-image  img{
+    width: 500px;
+}
+
+.go-down{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 58px;
+}
+.go-down div{
+    background-image: url(./image/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+}
+.go-down img{
+    width: 16px;
+    position: relative;
+    top: -60px;
+    cursor: pointer;
+}
 @keyframes show{
     0%{
         opacity: 0;
@@ -224,6 +299,14 @@ header{
     header{
         width: 940px;
     }
+    .banner{
+        width: 900px;
+        padding: 60px 40px 120px
+    }
+    .banner-image img{
+        width:430px ;
+    }
+ 
  }
 @media(max-width:990px){
     header{
@@ -239,6 +322,25 @@ header{
     .header-ul li{
         margin: 0 10px;
     }
+    .banner {
+        width: auto;
+        padding: 40px 40px 85px;
+        margin-left: 35px;
+        margin-right: 35px;
+      }
+      .banner-image img {
+        display: none;
+      }
+      .banner-text {
+        text-align: center;
+      }
+      .banner-text p {
+        margin: 5px 0;
+        font-size: 1rem;
+      }
+      .banner-button {
+        margin-top: 40px;
+      }
 }
 @media(max-width:768px){
     header{
@@ -251,4 +353,20 @@ header{
     .hamburger-icon{
         display: block;
     }
+    .banner {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
 } 
+@media (max-width: 575px) {
+    .banner {
+      padding: 80px 40px;
+    }
+    .banner-text h3 {
+      font-size: 1.2rem;
+      text-align: right;
+    }
+    .banner-text p {
+      text-align: justify;
+    }
+}    
