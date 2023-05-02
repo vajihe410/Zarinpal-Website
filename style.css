@@ -277,6 +277,77 @@ header{
     top: -60px;
     cursor: pointer;
 }
+.online-payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1170px;
+    margin: auto;
+}
+.section-image img{
+    width: 450px;
+    height: 480px;
+}
+.section-text{
+    margin: 30px 0;
+    width: 530px;
+}
+.section-text h2{
+    color: #747480;
+    font-family: "YekanBakhMedium";
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+.section-text h3{
+    color: #303030;
+    font-family: "YekanBakhHeavy";
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 5px 0 10px;
+}
+.section-text p{
+    color: #303030;
+    font-family: "YekanBakhMedium";
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfe1e4;
+    margin-top: 16px;
+    line-height: 40px;
+    text-align: justify;
+}
+.section-link{
+    margin-top: 40px;
+    display: flex;
+}
+.section-link a:first-child{
+    text-decoration: none;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: "YekanBakhMedium";
+    margin-left: 10px;
+
+}
+.section-link a:last-child{
+    text-decoration: none;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: "YekanBakhMedium";
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.section-link img{
+    width: 10px;
+    height: 15px;
+    margin-right: 5px;
+}
 @keyframes show{
     0%{
         opacity: 0;
@@ -306,7 +377,9 @@ header{
     .banner-image img{
         width:430px ;
     }
- 
+    .online-payment {
+        width: 940px;
+      }
  }
 @media(max-width:990px){
     header{
@@ -341,6 +414,14 @@ header{
       .banner-button {
         margin-top: 40px;
       }
+      .online-payment {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section-text {
+        width: 95%;
+      }
 }
 @media(max-width:768px){
     header{
@@ -357,6 +438,15 @@ header{
         margin-left: 8px;
         margin-right: 8px;
       }
+      .section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section-image img {
+        width: 460px;
+        height: 480px;
+      }
 } 
 @media (max-width: 575px) {
     .banner {
@@ -369,4 +459,14 @@ header{
     .banner-text p {
       text-align: justify;
     }
+    .section-image {
+        display: none;
+      }
+      .section-text {
+        width: 80%;
+        padding: 0 10px;
+      }
+      .section-text h3 {
+        font-size: 1.5rem;
+      }
 }    
