@@ -348,6 +348,72 @@ header{
     height: 15px;
     margin-right: 5px;
 }
+.attributes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 1170px;
+}
+.description{
+    width: 35%;
+    margin-top: 50px;
+}
+.description h3{
+    font-family: "YekanBakhHeavy";
+    font-size: 2rem;
+} 
+.description p{
+    font-family: "YekanBakhMedium";
+    font-size:1rem;
+    width: 85%;
+    margin-top: 40px;
+    line-height: 40px;
+    text-align: justify;
+} 
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    padding: 30px;
+}
+.item{
+    padding: 18px 25px 20px 0;
+}
+.item div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.item h4{
+    font-size: 1.5rem;
+    font-family:"YekanBakhHeavy"; 
+    margin-right: 20px;
+}
+.item img{
+    width: 60px;
+    height: 60px;
+}
+.item p{
+    margin: 20px 0 20px 10px;
+    font-size: 1rem;
+    font-family: "YekanBakhMedium";
+    color: #303030;
+    line-height: 26px;
+    text-align: justify;
+}
+.items .item:nth-child(1){
+    border-left:1px solid #e0e4e7 ;
+}
+.items .item:nth-child(2){
+    border-bottom:1px solid #e0e4e7 ;
+}
+.items .item:nth-child(3){
+    border-top:1px solid #e0e4e7 ;
+}
+.items .item:nth-child(4){
+    border-right:1px solid #e0e4e7 ;
+}
 @keyframes show{
     0%{
         opacity: 0;
@@ -380,6 +446,32 @@ header{
     .online-payment {
         width: 940px;
       }
+    .attributes{
+        width: 924px;
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .description{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .description p{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .items{
+        width: 90%;
+        padding: 30px;
+    }  
+    .item{
+        padding: 18px 0 20px 50px;
+    }
+    .items .item:nth-child(1),
+    .items .item:nth-child(2),
+    .items .item:nth-child(3),
+    .items .item:nth-child(4){
+        border: none;
+    }
  }
 @media(max-width:990px){
     header{
@@ -422,6 +514,10 @@ header{
       .section-text {
         width: 95%;
       }
+      .attributes{
+        width: auto;
+        padding: 0 25px;
+      }
 }
 @media(max-width:768px){
     header{
@@ -447,6 +543,20 @@ header{
         width: 460px;
         height: 480px;
       }
+      .description{
+        text-align: center;
+        margin-top: 20px;
+      }
+      .attributes h3{
+        font-size: 1.6rem;
+      }
+      .items{
+        width: 100%;
+        padding: 50px 0;
+      }
+      .item{
+        padding: 18px 0 20px 20px;
+      }
 } 
 @media (max-width: 575px) {
     .banner {
@@ -469,4 +579,11 @@ header{
       .section-text h3 {
         font-size: 1.5rem;
       }
+     .items{
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+     } 
+     .item{
+        padding: 18px 0;
+     }
 }    
