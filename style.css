@@ -448,6 +448,40 @@ header{
     border-radius: 10px;
     margin-top: 10px;
 }
+.support{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    height: 70px;
+    padding: 0 30px;
+    margin: 50px auto;
+    background-color: #fbf6f1;
+    border-radius: 35px;
+}
+.support-number p{
+    font-family:"YekanBakhHeavy"; 
+    font-size: 1.3rem;
+}
+.support-request{
+    display: flex 
+}
+.support-request p{
+    font-family: "YekanBakhBold";
+    font-size: 1.3rem;
+    color: #21254e;
+}
+.support-request img{
+    width: 20px;
+    margin-right: 10px;
+}
+.line{
+    margin: 0 15px;
+}
+.number{
+    color: #21254e;
+}
 @keyframes show{
     0%{
         opacity: 0;
@@ -509,6 +543,18 @@ header{
     .start-box{
         width: 940px;
     }
+    .support{
+        width: calc(100% - 120px);
+    }
+    .support-number p{
+        font-size: 14px;
+    }
+    .support-request p{
+        font-size: 16px;
+    }
+    .number{
+        font-size:1.3rem ;
+    }
  }
 @media(max-width:990px){
     header{
@@ -559,6 +605,21 @@ header{
         margin: 0 38px;
         width: calc(100% - 76px);
       }
+      .support{
+        flex-direction: column;
+        align-items: flex-start;
+        background: none;
+      }
+      .support-request{
+        background-color: #fbf6f1;
+        padding: 5px 20px ;
+        border-radius: 35px;
+        margin-top: 20px;
+
+      }
+      .support-request p,.support-number p{
+        font-size: 1.1rem;
+      }
 }
 @media(max-width:768px){
     header{
@@ -602,6 +663,13 @@ header{
         margin: 0 8px;
         width: calc(100% - 16px);
       }
+      .support{
+        width: calc(100% - 60px);
+        margin: 50px 30px;
+      }
+     .support-request p,.support-number p{
+        font-size: 1.1rem;
+      }
 } 
 @media (max-width: 575px) {
     .banner {
@@ -640,4 +708,15 @@ header{
      .start-box p{
         font-size: 1rem;
      }
+     .support-number p {
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+     }
+     .support-request p,.support-number span{
+        font-size: 0.9rem;
+      }
+      .line{
+        display: none;
+      }
 }    
