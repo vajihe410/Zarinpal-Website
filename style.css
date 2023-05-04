@@ -560,6 +560,44 @@ footer{
 .footer-second p{
     font-size: 0.8rem;
 }
+.bell{
+
+}
+.bell-icon{
+    background-color:#2e82ff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+.bell-icon img{
+    width: 40px;
+    height: 40px;
+}
+.tooltips{
+    background-color: #747480;
+    border-radius: 8px;
+    padding: 4px 8px;
+    display: inline-block;
+    position: fixed;
+    left: 79px;
+    bottom: 29px;
+    visibility: hidden;
+}
+.tooltips span{
+    font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+}
+.bell:hover .tooltips{
+    visibility: visible;
+}
 @keyframes show{
     0%{
         opacity: 0;
