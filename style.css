@@ -482,6 +482,84 @@ header{
 .number{
     color: #21254e;
 }
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-first{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: calc(100% - 330px);
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+.footer-links ul{
+    list-style-type: none;
+    margin-top: 12px;
+}
+.footer-links li{
+    padding: 8px 0;
+}
+.footer-links p{
+    font-family: "YekanBakhHeavy";
+    font-size: 1.3rem;
+    counter-reset: #303030;
+    margin-top: 15px;
+    transition: all 0.3 ease;
+}
+.footer-links p:hover{
+    color: #254a83;
+}
+.footer-links a{
+    text-decoration: none;
+    font-family:"iranyekanwebmedium";
+    font-size: 1rem;
+    color: #000;
+}
+.social-media{
+    width: 330px;
+    padding: 0 30px;
+    margin-bottom: 106px;
+
+}
+.social-media p{
+    font-family:"YekanBakhHeavy";
+    font-size: 1.3rem;
+    color: #303030;
+
+}
+.social-media div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media div a {
+    width: 45px;
+    height: 45px;
+    background-color: #eff4fe;
+    border-radius: 10px;
+    margin-left: 15px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.footer-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.footer-second p{
+    font-size: 0.8rem;
+}
 @keyframes show{
     0%{
         opacity: 0;
@@ -555,6 +633,9 @@ header{
     .number{
         font-size:1.3rem ;
     }
+    footer{
+        width: 940px;
+    }
  }
 @media(max-width:990px){
     header{
@@ -620,6 +701,18 @@ header{
       .support-request p,.support-number p{
         font-size: 1.1rem;
       }
+      footer{
+        width: calc(100% - 60px);
+      }
+      .footer-first{
+        flex-direction: column;
+      }
+      .footer-links{
+        width: 100%;
+      }
+      .social-media{
+        padding: 0 10px;
+      }
 }
 @media(max-width:768px){
     header{
@@ -670,6 +763,16 @@ header{
      .support-request p,.support-number p{
         font-size: 1.1rem;
       }
+      footer{
+        width: calc(100% - 120px);
+        margin: 0 60px;
+      }
+      .footer-links{
+        grid-template-columns: repeat(2,1fr);
+      }
+      .footer-links div{
+        margin-top: 25px;
+      }
 } 
 @media (max-width: 575px) {
     .banner {
@@ -719,4 +822,11 @@ header{
       .line{
         display: none;
       }
+    footer{
+        width: calc(100% - 60px);
+        margin: 0 30px;
+    }
+    .footer-links p,.footer-links a{
+        font-size: 0.9rem;
+    }
 }    
